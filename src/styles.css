@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #fff;
+    color: #ff9f33;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  header {
+    background-color: #002233;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+    background-color: #ffffff25;
+    backdrop-filter: blur(15px);
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #ff9f33;;
+    transition: 0.2s;
+  }
+
+  nav a:hover {
+    color: #002233;
+    transition: 0.2s;
+  }
+
+  #modoOscuroBtn {
+    background-color: #002233;
+    color: #fff;
+    border: none;
+    padding: 5px 5px 5px 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 8px;
+  }
+
+  #modoOscuroBtn i {
+    margin-right: 5px;
+  }
+
+  #modoOscuroBtn:hover {
+    background-color: #ff9f33;
+    transition: 0.2s;
+  }
+
+  /* Estilos para el modo oscuro */
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+  /* Estilos para la sección con tarjetas y fondo de imagen */
+  .seccion-tarjetas {
+    background-image: url("/src/img/wave-haikei.svg"); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+  }
+
+  /* Estilos para las tarjetas con grid */
+  .tarjeta-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    /*background-color: rgba(255, 255, 255, 0.8); Fondo semi-transparente para las tarjetas */
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .tarjeta {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+
+  .tarjeta:hover {
+    transform: scale(1.05);
+  }
+
+  .tarjeta img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .tarjeta-descripcion {
+    padding: 10px;
+  }
+
+  .tarjeta-iconos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .tarjeta:hover .tarjeta-iconos {
+    opacity: 1;
+    background-color: #002233;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+  }
+
+  .tarjeta-iconos i {
+    margin: 0 5px;
+    font-size: 18px;
+  }
