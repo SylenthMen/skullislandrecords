@@ -15,16 +15,14 @@ body {
     transition: background-color 0.3s, color 0.3s;
   }
 
-  header {
-    background-color: #002233;
-    color: #fff;
+  header {  
     padding: 10px;
     text-align: center;
   }
 
   nav {
     margin-top: 10px;
-    background-color: #ffffff25;
+    background-color: #00223350;
     backdrop-filter: blur(15px);
     padding: 10px;
     text-align: center;
@@ -64,8 +62,8 @@ body {
 
   /* Estilos para el modo oscuro */
   body.dark-mode {
-    background-color: #333;
-    color: #fff;
+    background-color: #000;
+    color: #ff9f33;
   }
 
   /* Estilos para la sección con tarjetas y fondo de imagen */
@@ -122,7 +120,8 @@ body {
 
   .tarjeta:hover .tarjeta-iconos {
     opacity: 1;
-    background-color: #002233;
+    background-color: #00000030;
+    backdrop-filter: blur(15px);
     padding: 8px;
     border-radius: 10px;
     font-size: 1.3rem;
