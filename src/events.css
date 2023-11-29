@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+    --scrollbar-width: 12px; --scrollbar-height: 10px; --scrollbar-border-thickness: 0px; --show-double-buttons: none; --scrollbar-track-color: #002233; --scrollbar-thumb-color: #FF9F33; --scrollbar-corner-color: #00BCD4B3; --scrollbar-border-color: #FFFFFF; } body::-webkit-scrollbar { width: var(--scrollbar-width, 20px); height: var(--scrollbar-height, 20px); }body::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb-color, #3B82F6); border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255)); border-radius: var(--scrollbar-border-radius, 4px); }body::-webkit-scrollbar-track { background: var(--scrollbar-track-color, #A1A1AA); }body::-webkit-scrollbar-corner { background: var(--scrollbar-corner-color, #FFFFFF); border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255)); border-radius: var(--scrollbar-border-radius, 4px); }body::-webkit-scrollbar-button:vertical:start:increment, #preview::-webkit-scrollbar-button:vertical:end:decrement, #preview::-webkit-scrollbar-button:horizontal:start:increment, #preview::-webkit-scrollbar-button:horizontal:end:decrement { display: var(--show-double-buttons, none);
+  }
+
+  header {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+    border-radius: 15px;
+    background-color: #ff9f33;
+    color: #002233;
+    width: 80%; /* ancho del header*/
+    max-width: 1200px; /* maximo ancho del header */
+  }
+
+  .btninicio {
+    text-decoration: none;
+    border: 2px solid #002233;
+    padding: 10px;
+    border-radius: 5px;
+    color: #002233;
+    font-weight: 900;
+    transition: 0.3s;
+  }
+
+  .btninicio:hover {
+    transition: 0.3s;
+    background-color: #002233;
+    color: #ff9f33;
+  }
+
+  .card {
+    background-color: #ff9f33;
+    display: flex;
+    margin: 20px;
+    padding: 0 10px 0 0;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    max-width: 500px; /* ancho de la tarjeta */
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #002233;
+  }
+
+  .card:hover {
+    scale: 1.1;
+    transition: 0.3s;
+  }
+
+  .card img {
+    max-width: 200px; /* tamaño de la imagen */
+    margin-right: 20px;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .btncard {
+    text-decoration: none;
+    color: #002233;
+    border: 2px solid #002233;  
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    float: right;
+    margin-bottom: 15px;
+    }
+  
+  .btncard:hover {
+    transition: 0.3s;
+    background-color: #002233;
+    color: #ff9f33;
+    }
